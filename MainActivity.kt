@@ -53,7 +53,7 @@ class MainActivity : Activity() {
             orientation = LinearLayout.VERTICAL
             setPadding(pad, pad * 2, pad, pad)
             addView(TextView(this@MainActivity).apply {
-                text = "Dynamic Island"
+                text = "Dynamic Island v2"
                 textSize = 26f
             })
             addView(btn("1) Üstte gösterme iznini ver") {
