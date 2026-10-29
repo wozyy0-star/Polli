@@ -1,3 +1,5 @@
+import java.io.File
+
 plugins {
     id("com.android.application") version "8.5.2"
     id("org.jetbrains.kotlin.android") version "1.9.24"
@@ -14,7 +16,7 @@ val genRes = tasks.register("genRes") {
     doLast {
         val d = outDir.get().asFile.resolve("drawable")
         d.mkdirs()
-        java.io.File(d, "ic_launcher.xml").writeText(
+        File(d, "ic_launcher.xml").writeText(
             """<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp" android:height="108dp"
     android:viewportWidth="108" android:viewportHeight="108">
